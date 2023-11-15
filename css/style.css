@@ -470,7 +470,7 @@ ol {
 	position: absolute;
 	text-align: left;
 	padding: 10px 0;
-	width: 170px;
+	width: 120px;
 	left: 0;
 	top: 100%;
 	margin-top: 50px;
@@ -504,6 +504,7 @@ ol {
 	padding: 5px 15px;
 	color: #7E858B;
 	text-transform: none;
+	text-align: center;
 	margin: 0;
 	font-size: 14px;
 	font-weight: 700;
