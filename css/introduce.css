@@ -63,3 +63,24 @@ nav a:focus {
 .support a:hover {
   transform: scale(1.1);
 }
+
+
+/* 임의의 영역 생성 */
+/* CSS 코드 중간에 추가 */
+.scrollBar {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.scrollBar::-webkit-scrollbar {
+  width: 12px; /* 스크롤바의 너비 */
+}
+
+.scrollBar::-webkit-scrollbar-thumb {
+  background-color: #09D0EF; /* 스크롤바 색상 */
+  border-radius: 10px;
+}
+
+.scrollBar::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* 스크롤바 트랙 색상 */
+}
