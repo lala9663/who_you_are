@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-	<title>Team04</title>
+	<title>Boto | Photography HTML Template</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Boto Photo Studio HTML Template">
 	<meta name="keywords" content="photo, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Icon -->
 	<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
 	<link rel="stylesheet" href="css/slicknav.min.css"/>
-	<link rel="stylesheet" href="css/slick.css"/>
 	<!-- Main Stylesheets -->
 	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/music.css"/>
 
 </head>
 <body>
@@ -45,8 +46,8 @@
 			</div>
 			<nav class="main__menu">
 				<ul class="nav__menu">
-					<li><a href="./index.html" class="menu--active">Home</a></li>
-					<li><a href="./team.html">Team</a></li>
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="./team.html" >Team</a></li>
 					<li><a href="#">Personal</a>
 						<ul class="sub__menu">
 							<li><a href="./introduce/hyeonjong.html">Hyunjong</a></li>
@@ -57,9 +58,9 @@
 						</ul>
 						
 					</li>
-					<li><a href="music.html">Music</a></li>
+					<li><a href="music.html" class="menu--active" >Music</a></li>
 
-					<li><a href="board.html">Board</a></li>
+					<li><a href="board.html" >Board</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -67,58 +68,46 @@
 	<!-- Header Section end -->
 
 	<!-- Content Section -->
-	<section class="hero__section">
-		<div class="hero-slider">
-			<div class="slide-item">
-				<a onclick="location.href='./introduce/juhee.html'" >
-					<img src="img/hero-slider/1.jpg" alt="">
-				</a>
-			</div>
-			<div class="slide-item">
-				<a onclick="location.href='./introduce/suhyun.html'" >
-					<img src="img/hero-slider/2.jpg" alt="">
-					</a>
-			</div>
-			<div class="slide-item">
-				<a onclick="location.href='/introduce/hyeonjong.html'" >
-					<img src="img/hero-slider/3.jpg" alt="">
-				</a>	
-			</div>
-			<div class="slide-item">
-				<a onclick="location.href='/introduce/taeyun.html'" >
-					<img src="img/hero-slider/4.jpg" alt="">
-				</a>	
-			</div>
-			<div class="slide-item">
-				<a onclick="location.href='/introduce/taehyung.html'">
-					<img src="img/hero-slider/5.jpg" alt="">
-				</a>	
-			</div>
-		</div>
-		<div class="hero-text-slider">
-			<div class="text-item">
-				<h2>Hyunjong</h2>
-				<p>Intoduce Page</p>
-			</div>
-			<div class="text-item">
-				<h2>Juhee</h2>
-				<p>Intoduce Page</p>
-			</div>
-			<div class="text-item">
-				<h2>Taeyun</h2>
-				<p>Intoduce Page</p>
-			</div>
-			<div class="text-item">
-				<h2>Taehyung</h2>
-				<p>Intoduce Page</p>
-			</div>
-			<div class="text-item">
-				<h2>SuHyun</h2>
-				<p>Intoduce Page</p>
+	<section class="contact__page">
+		<div class="contact__warp">
+			<div class="row music">
+				<div class="col-md-6">
+					<img src="./img/test.jpg" id="mid" width="100%" id="myImg">
+    
+					<p class="mname" id="mname">
+					  Music Name One
+					</p>
+					
+					<audio controls src="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3" id="myAudio">
+					</audio>
+				</div>
+				<div class="col-md-6">
+					<div class="list">
+						<div class="litems" id="m1">1. Music Name One<br>
+						  Artists: Someone Singer
+						</div>
+						
+						<div class="litems" onclick="music1()" id="m2">2. Music Name Two<br>
+						  Artists: Someone Singer
+						</div>
+						
+						<div class="litems" onclick="music3()">3. Music Name Three<br>
+						  Artists: Someone Singer
+						</div>
+						
+						<div class="litems">4. Music Name Five<br>
+						  Artists: Someone Singer
+						</div>
+						
+						<div class="litems">6. Music Name Six<br>
+						  Artists: Someone Singer
+						</div>
+					  </div>
+				</div>
 			</div>
 		</div>
 	</section>
-	<!-- Content Section end -->
+	<!-- Content Section end-->
 
 	<!-- Footer Section -->
 	<footer class="footer__section">
