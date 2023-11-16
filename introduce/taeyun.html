@@ -1,20 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html class = "scroll-hi">
 <head>
-<title>W3.CSS Template</title>
+<title>taeyun</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/introduce.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+.edu{
+  height: 400px;
+}
+
 </style>
 </head>
-<body class="w3-light-grey">
-
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+<body class="w3-light-grey scrollBar">
+  <header>
+    <!-- 네비게이션 바 -->
+    <nav>
+      <a href="#">
+        <span class="text">Animation</span>
+        <div class="slide"></div>
+      </a>
+      <a href="#">
+        <span class="text">Branding</span>
+        <div class="slide"></div>
+      </a>
+      <a href="#">
+        <span class="text">Illustration</span>
+        <div class="slide"></div>
+      </a>
+    </nav>
+  </header>
+<div class="w3-content w3-margin-top" style="max-width: 80%;">
 
   <!-- The Grid -->
   <div class="w3-row-padding">
@@ -24,52 +45,48 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
-          <img src="/w3images/avatar_hat.jpg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2>Jane Doe</h2>
+          <img src="../img/introduce/jjang.png" style="width:100%" alt="Avatar">
+          <div class="">
+            <h2 style="color: black; text-align: left; padding-left: 10px; margin-bottom: 0;">Taeyun Kim</h2>
           </div>
+          
         </div>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Designer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>London, UK</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ex@mail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1224435534</p>
-          <hr>
+          <p><i class="fa-fw w3-margin-right w3-large w3-text-cyan"><img src="..\img\birth.png" style="width:5%" alt=""></i>1996.06.03</p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-cyan"></i>교육생</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-cyan"></i>Seoul, Korea</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-cyan"></i>lala9663@naver.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-cyan"></i>010-6614-2040</p>
+          <hr style="border-color: black;">
 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>Adobe Photoshop</p>
+          <p class="w3-large" style="color: black;"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-cyan"></i>Progrmming Languages</b></p>
+          <p>JAVA</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:50%">50%</div>
           </div>
-          <p>Photography</p>
+          <p>Python</p> 
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-              <div class="w3-center w3-text-white">80%</div>
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:50%">
+              <div class="w3-center w3-text-white">50%</div>
             </div>
           </div>
-          <p>Illustrator</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-          </div>
-          <p>Media</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-          </div>
-          <br>
+          <hr style="border-color: black;">
+          
 
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p>English</p>
+          <p class="w3-large w3-text-theme" style="color: black;"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-cyan"></i>Languages</b></p>
+          <p style="color: black;">Korean</p>
           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+            <div class="w3-round-xlarge w3-black" style="height:24px;width:100%">
+              <div class="w3-center w3-text-black">100%</div>
+            </div>
           </div>
-          <p>Spanish</p>
+          <p style="color: black;">English</p>
           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
+            <div class="w3-round-xlarge w3-black" style="height:24px;width:50%">
+              <div class="w3-center w3-text-black">50%</div>
+            </div>
           </div>
-          <p>German</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
-          </div>
+          
           <br>
         </div>
       </div><br>
@@ -79,32 +96,20 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
     <!-- Right Column -->
     <div class="w3-twothird">
-    
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 style="color: black;" class="w3-text-black w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-cyan"></i>Education</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+          <h5 style="color: black;" class="w3-opacity-black"><b>Metanet</b></h5>
+          <h6 style="color: black;" class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2023/11 - 2024/03</h6>
+          <p style="size: 100px; color: black;">교육중!!</p>
         </div>
       </div>
 
       <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <h2 class="w3-text-black w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-cyan"></i>Hobby</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
+          <h5  class="w3-opacity-black"><b>W3Schools.com</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
           <p>Web Development! All I need to know in one place</p>
           <hr>
@@ -122,6 +127,21 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         </div>
       </div>
 
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-black w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-cyan"></i>Gallary</h2>
+        <div class="w3-container">
+          <h5  class="w3-opacity-black"><b>W3Schools.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
+          <p>Web Development! All I need to know in one place</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>London Business School</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
+          <p>Master Degree</p>
+          <hr>
+        </div>
+      </div>
     <!-- End Right Column -->
     </div>
     
@@ -131,7 +151,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <!-- End Page Container -->
 </div>
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
+<footer class="w3-container w3-black w3-center w3-margin-top" style="background-color: black;">
   <p>Find me on social media.</p>
   <i class="fa fa-facebook-official w3-hover-opacity"></i>
   <i class="fa fa-instagram w3-hover-opacity"></i>
@@ -141,6 +161,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <i class="fa fa-linkedin w3-hover-opacity"></i>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
+
+<script src="../js/introduce.js"></script>
+
 
 </body>
 </html>
