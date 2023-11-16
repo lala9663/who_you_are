@@ -12,6 +12,59 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+/* 4조를 소개합니다 - 시작*/
+.hover09 figure img {
+	opacity: 1;
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+.hover09 figure:hover img {
+	opacity: .5;
+}
+/* 4조를 소개합니다 - 끝*/
+
+/* Keywords 글자 에니메이션 효과 - 시작*/
+.animation {
+    width: 90vw;
+  margin: 0 auto;
+  /* text-align: center; */
+}
+  .animation span{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .animation .two_text{
+    color: #2aff29;
+  }
+  
+  .two_text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1D2025;
+    border-left: 2px solid #AB3A2C;
+    animation: animate 3s steps(5) infinite;
+  }
+  
+  @keyframes animate{
+    40%, 60%{
+        left: calc(100% + 1px);
+    }
+  
+    100%{
+        left: 0%;
+    }
+  }
+
+
+
+/* Keywords 글자 에니메이션 효과 - 끝 */
 
 html,
 body {
@@ -689,17 +742,15 @@ ol {
 
 .about__meta {
 	overflow: hidden;
-	min-width: 150px;
-  	max-width: 350px;
-  	max-height: 350px;
 	margin-bottom: 35px;
 }
 
 .about__meta img {
 	float: left;
-	min-width: 150px;
-  	max-width: 350px;
-  	max-height: 350px;
+	min-width: 200px;
+    max-width: 800px;
+    max-height: 600px;
+    width: 100%;
 	border-radius: 50%;
 	margin-right: 15px;
 	padding-top: 0;
