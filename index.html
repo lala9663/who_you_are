@@ -14,7 +14,6 @@
 	<link rel="stylesheet" href="css/slick.css"/>
 	<!-- Main Stylesheets -->
 	<link rel="stylesheet" href="css/style.css"/>
-
 </head>
 <body>
 	<!-- Page Preloder -->
@@ -71,42 +70,46 @@
 		<div class="hero-slider">
 			<!-- Team Page -->
 			<div class="slide-item">
-				<a onclick="location.href='team.html'" style="border-radius: 10px; border: 1px solid gray; width: full; height: full;" >
-					<img src="img/test.jpg" alt="">
+				<a onclick="location.href='./team.html'">
+					<img src="img/profile/team.jpg" alt="" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
 				</a>
 			</div>
 			<!-- Juhee Page -->
 			<div class="slide-item">
-				<a onclick="location.href='./introduce/juhee.html'" style="border-radius: 10px; border: 1px solid gray; width: full; height: full;" >
-					<img src="img/profile/juhee.png" alt="">
+				<a onclick="location.href='./introduce/juhee.html'" >
+					<img src="img/profile/hyeonjong.png" alt="" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
 				</a>
 			</div>
 			<!-- Suhyun Page -->
 			<div class="slide-item">
 				<a onclick="location.href='./introduce/suhyun.html'" >
-					<img src="img/profile/suhyun.png" alt="">
+					<img src="img/profile/juhee.png" alt="" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
 					</a>
 			</div>
 			<div class="slide-item">
 				<a onclick="location.href='/introduce/hyeonjong.html'" >
-					<img src="img/profile/hyeonjong.png" alt="">
+					<img src="img/profile/taeyun.png" alt="" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
 				</a>	
 			</div>
 			<!-- Taeyun Page -->
 			<div class="slide-item">
 				<a onclick="location.href='/introduce/taeyun.html'" >
-					<img src="img/profile/taeyun.png" alt="">
+					<img src="img/profile/taehyung.png" alt="" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
 				</a>	
 			</div>
 			<!-- Taehyung Page -->
 			<div class="slide-item">
 				<a onclick="location.href='/introduce/taehyung.html'">
-					<img src="img/profile/taehyung.png" alt="">
+					<img src="img/profile/suhyun.png" alt="" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
 				</a>	
 			</div>
 		</div>
 		
 		<div class="hero-text-slider">
+			<div class="text-item">
+				<h2>Metanet Team 04</h2>
+				<p>Intoduce Page</p>
+			</div>
 			<div class="text-item">
 				<h2>Hyunjong</h2>
 				<p>Intoduce Page</p>
@@ -161,4 +164,18 @@
 	<script src="js/main.js"></script>
 
 	</body>
+
+	<script>
+		function zoomIn(event) {
+			event.target.style.transform = "scale(1.2)"; //1.2배 확대
+			event.target.style.zIndex = 1;
+			event.target.style.transition = "all 0.5s";// 속도
+		}
+
+		function zoomOut(event) {
+			event.target.style.transform = "scale(1)";
+			event.target.style.zIndex = 0;
+			event.target.style.transition = "all 0.5s";
+		}
+	</script>
 </html>

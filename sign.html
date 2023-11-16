@@ -6,68 +6,161 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 <title>Login Page</title>
-<link rel="stylesheet" href="css/sign.css"/>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <!-- font -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="css/sign.css"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+
 </head>
-<body>
-<div class="section">
-    <div class="container">
-        <div class="row justify-content-center">
-        <div class="col-12 text-center align-self-center py-5">
-            <div class="section pb-5 pt-5 pt-sm-2 text-center">
-                <h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
-                <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
-                <label for="reg-log"></label>
-                <div class="card-3d-wrap mx-auto">
-                    <div class="card-3d-wrapper">
-                        <div class="card-front">
-                            <div class="center-wrap">
-                                <div class="section text-center">
-                                    <h4 class="mb-4 pb-3 h4-style">Log In</h4>
-                                    <div class="form-group">
-                                        <input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
-                                        <span class="input-icon iconify" data-icon="uil:user"></i>
+
+<body style="overflow: auto;">
+	<!-- Header Section -->
+	<header class="header">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-4 col-md-3 order-sm-1">
+					<div class="header__social">
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-6 order-1  order-md-2 text-center">
+					<a href="./index.html" class="site-logo" style="
+                    display: flex;
+                    justify-content: center;
+                    display: fe;
+                ">
+						<img src="img/logo.png" alt="">
+					</a>
+				</div>
+				<div class="col-sm-4 col-md-3 order-3 order-sm-3">
+					<div class="header__switches">
+						<a href="#" class="search-switch"><span class="iconify" data-icon="iconamoon:search-fill" data-width="25" data-height="25"></span></a>
+						<a href="https://github.com/team-profiles"><span class="iconify" data-icon="devicon:github" data-width="25"></span></a>
+						<a href="./sign.html"><span class="iconify" data-icon="ep:user-filled" data-width="25"></span></a>
+					</div>
+				</div>
+			</div>
+			<nav class="main__menu">
+				<ul class="nav__menu">
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="./team.html">Team</a></li>
+					<li><a href="#">Personal</a>
+						<ul class="sub__menu">
+							<li><a href="./introduce/hyeonjong.html">Hyunjong</a></li>
+							<li><a href="./introduce/juhee.html">Juhee</a></li>
+							<li><a href="./introduce/taeyun.html">Taeyun</a></li>
+							<li><a href="./introduce/taehyung.html">TaeHyung</a></li>
+							<li><a href="./introduce/suhyun.html">SuHyun</a></li>
+						</ul>
+						
+					</li>
+					<li><a href="music.html">Music</a></li>
+
+					<li><a href="board.html">Board</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- Header Section end -->
+
+
+    <!-- Content Section -->
+    <div class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+            <div class="col-12 text-center align-self-center py-5">
+                <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                    <h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
+                    <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+                    <label for="reg-log"></label>
+                    <!-- Card Section -->
+                    <div class="card-3d-wrap mx-auto">
+                        <div class="card-3d-wrapper">
+                            <!-- Sing in Section -->
+                            <div class="card-front">
+                                <div class="center-wrap">
+                                    <div class="section text-center">
+                                        <h4 class="mb-4 pb-3 h4-style">Log In</h4>
+                                        <div class="form-group">
+                                            <input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
+                                            <span class="input-icon iconify" data-icon="uil:user"></i>
+                                            </div>	
+                                        <div class="form-group mt-2">
+                                            <input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
+                                            <span class="input-icon iconify" data-icon="uil:lock-alt"></i>
+                                            </div>
+                                        <a href="#" class="btn mt-4 bg-lime-500 text-white ">submit</a>
+                                        <p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your password?</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Sing in Section End -->
+
+                            <!-- Sing up Section -->
+                            <div class="card-back">
+                                <div class="center-wrap">
+                                    <div class="section text-center">
+                                        <h4 class="mb-4 h4-style">Sign Up</h4>
+                                        <div class="form-group">
+                                            <input type="text" name="logname" class="form-style" placeholder="Your Full Name" id="logname" autocomplete="off">
+                                            <span class="input-icon iconify" data-icon="uil:user"></i>
                                         </div>	
-                                    <div class="form-group mt-2">
-                                        <input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
-                                        <span class="input-icon iconify" data-icon="uil:lock-alt"></i>
+                                        <div class="form-group mt-2">
+                                            <input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
+                                            <span class="input-icon iconify" data-icon="uil:at"></span>
+                                        </div>	
+                                        <div class="form-group mt-2">
+                                            <input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
+                                            <span class="input-icon iconify" data-icon="uil:lock-alt"></i>
                                         </div>
-                                    <a href="#" class="btn mt-4">submit</a>
-                                    <p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your password?</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <div class="center-wrap">
-                                <div class="section text-center">
-                                    <h4 class="mb-4 pb-3 h4-style">Sign Up</h4>
-                                    <div class="form-group">
-                                        <input type="text" name="logname" class="form-style" placeholder="Your Full Name" id="logname" autocomplete="off">
-                                        <span class="input-icon iconify" data-icon="uil:user"></i>
-                                    </div>	
-                                    <div class="form-group mt-2">
-                                        <input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
-                                        <span class="input-icon iconify" data-icon="uil:at"></span>
-                                    </div>	
-                                    <div class="form-group mt-2">
-                                        <input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
-                                        <span class="input-icon iconify" data-icon="uil:lock-alt"></i>
-                                    </div>
-                                    <div class="form-group mt-2">                              
-                                        <a href="#" class="btn mt-4">submit</a>
+                                        <div class="form-group mt-2">                              
+                                            <a href="#" class="btn mt-4 bg-lime-500 text-white">submit</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Sing up Section End -->
                         </div>
                     </div>
+                    <!-- Card Section End-->
                 </div>
             </div>
         </div>
     </div>
-</div>
+    <!-- Content Section End -->
 
+    <!-- Footer Section -->
+	<footer class="footer__section">
+		<div class="container">
+			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+			<div class="footer__copyright__text">
+				<p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This page is made with <i class="fa fa-heart" aria-hidden="true"></i> by Team <a href="https://github.com/team-profiles" target="_blank">Metanet Team04</a></p>
+			</div>
+			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+		</div>
+	</footer>
+	<!-- Footer Section end -->
+
+    <!-- Search Begin -->
+	<div class="search-model">
+		<div class="h-100 d-flex align-items-center justify-content-center">
+			<div class="search-close-switch">+</div>
+			<form class="search-model-form">
+				<input type="text" id="search-input" placeholder="Search here.....">
+			</form>
+		</div>
+	</div>
+	<!-- Search End -->
+
+    <!--====== Javascripts & Jquery ======-->
+	<script src="js/vendor/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
 </html>
