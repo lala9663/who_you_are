@@ -2,12 +2,14 @@
 .player {
   /* width: 800px; */
   height: 529px;
-  background: #6b6d83;
+  /* background: #6b6d83; */
+  /* background: #6b6d83; */
   box-shadow: 0px 24px 54px -12px rgba(94, 97, 120, 1);
   /* position: absolute; */
   left: 50%;
   /* transform: translateX(-400px); */
   top: 20%;
+  border-radius: 10%;
 }
 
 .player .cover {
@@ -17,6 +19,7 @@
   transform: translateX(-115px);
   top: -40px;
   box-shadow: 5px 20px 50px 0px rgba(17, 17, 17, 0.4);
+  border-radius: 50%;
 }
 
 
@@ -36,14 +39,16 @@
 }
 
 .player .info .artist {
-  color: #fff;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #7E858B;
 }
 
 .player .line {
   height: 3px;
   width: 100%;
-  background-color: #525363;
-  margin: 3rem auto;
+  background-color: #8DB952;
+  margin: 2rem auto;
   /* position: absolute; */
   /* top: 400px; */
   }
@@ -80,7 +85,7 @@
 
 .player .forward {
   margin-left: 80px;
-  color: #fff;
+  color: #7E858B;
   /* width: 30px; */
   /* position: absolute; */
   /* bottom: 55px; */
@@ -89,7 +94,7 @@
 
 .player .backward {
   margin-right: 80px;
-  color: #fff;
+  color: #7E858B;
   /* width: 30px; */
   /* position: absolute; */
   /* bottom: 55px; */
