@@ -6,11 +6,14 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 <title>Login Page</title>
-<link rel="stylesheet" href="css/sign.css"/>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <!-- font -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<!-- Stylesheets -->
+<link rel="stylesheet" href="css/sign.css"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
 <link rel="stylesheet" href="css/style.css"/>
 
 </head>
@@ -20,12 +23,16 @@
 	<header class="header">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-sm-4 col-md-3 order-2 order-sm-1">
+				<div class="col-sm-4 col-md-3 order-sm-1">
 					<div class="header__social">
 					</div>
 				</div>
 				<div class="col-sm-4 col-md-6 order-1  order-md-2 text-center">
-					<a href="./index.html" class="site-logo">
+					<a href="./index.html" class="site-logo" style="
+                    display: flex;
+                    justify-content: center;
+                    display: fe;
+                ">
 						<img src="img/logo.png" alt="">
 					</a>
 				</div>
@@ -60,6 +67,7 @@
 	</header>
 	<!-- Header Section end -->
 
+
     <!-- Content Section -->
     <div class="section">
         <div class="container">
@@ -85,7 +93,8 @@
                                             <input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
                                             <span class="input-icon iconify" data-icon="uil:lock-alt"></i>
                                             </div>
-                                        <a href="#" class="btn mt-4">submit</a>
+                                            <!-- 여기 -->
+                                        <a href="#" class="btn mt-4 bg-lime-500 text-white">submit</a>
                                         <p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your password?</a></p>
                                     </div>
                                 </div>
@@ -110,7 +119,7 @@
                                             <span class="input-icon iconify" data-icon="uil:lock-alt"></i>
                                         </div>
                                         <div class="form-group mt-2">                              
-                                            <a href="#" class="btn mt-4">submit</a>
+                                            <a href="#" class="btn mt-4 bg-lime-500 text-white">submit</a>
                                         </div>
                                     </div>
                                 </div>
@@ -136,6 +145,23 @@
 		</div>
 	</footer>
 	<!-- Footer Section end -->
+
+    <!-- Search Begin -->
+	<div class="search-model">
+		<div class="h-100 d-flex align-items-center justify-content-center">
+			<div class="search-close-switch">+</div>
+			<form class="search-model-form">
+				<input type="text" id="search-input" placeholder="Search here.....">
+			</form>
+		</div>
+	</div>
+	<!-- Search End -->
+
+    <!--====== Javascripts & Jquery ======-->
+	<script src="js/vendor/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
 </html>
