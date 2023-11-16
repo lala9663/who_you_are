@@ -1,12 +1,9 @@
 
 .player {
-  /* width: 800px; */
   height: 529px;
   background: #6b6d83;
   box-shadow: 0px 24px 54px -12px rgba(94, 97, 120, 1);
-  /* position: absolute; */
   left: 50%;
-  /* transform: translateX(-400px); */
   top: 20%;
 }
 
@@ -40,13 +37,12 @@
 }
 
 .player .line {
-  
   height: 3px;
   width: 100%;
   background-color: #525363;
-  position: absolute;
-  top: 400px;
-}
+  margin: 3rem auto;
+
+  }
 
 .player .playtime {
   background-color: rgba(114, 230, 207, 0.3);
@@ -64,53 +60,25 @@
   bottom: 0px;
 }
 
-.player svg {
-  width: 85px;
-  background-color: #fff;
-  border-radius: 50%;
-  height: 85px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-42.5px);
-  bottom: 25px;
-  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.4);
+.player .select {
+  display: flex;
+  justify-content: center;
 }
 
 .player .forward {
-  width: 30px;
-  position: absolute;
-  bottom: 55px;
-  right: -70%;
+  margin-left: 80px;
+  color: #fff;
+
 }
 
 .player .backward {
-  width: 30px;
-  position: absolute;
-  bottom: 55px;
-  left: 36%;
+  margin-right: 80px;
+  color: #fff;
+
 }
 
 .player .fa.fa-volume-up {
   color: #fff;
-  position: absolute;
-  bottom: 53px;
-  right: 28%;
+
 }
 
-.player p.songtime {
-  color: #fff;
-  position: absolute;
-  right: 20px;
-  bottom: 45px;
-}
-
-.player p.timeleft {
-  color: #fff;
-  position: absolute;
-  left: 20px;
-  bottom: 45px;
-}
-
-.player .fa.fa-heart.liked {
-  color: #ff749f;
-}
