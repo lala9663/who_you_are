@@ -12,6 +12,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+/* 키워드 효과 */
+.experience__text h4:hover{
+	color: #8DB952;
+
+}
+
 /* 4조를 소개합니다 - 시작*/
 .hover09 figure img {
 	opacity: 1;
@@ -62,10 +68,7 @@
     }
   }
 
-
-
 /* Keywords 글자 에니메이션 효과 - 끝 */
-
 html,
 body {
 	height: 100%;
@@ -779,6 +782,7 @@ ol {
 .experience__item h4 {
 	font-size: 20px;
 	margin-bottom: 20px;
+	font-style: italic;
 }
 
 .skills__text {
