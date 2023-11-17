@@ -52,7 +52,7 @@
 					<li><a href="./team.html" >Team</a></li>
 					<li><a href="#">Personal</a>
 						<ul class="sub__menu">
-							<li><a href="./introduce/hyeonjong.html">Hyunjong</a></li>
+							<li><a href="./introduce/hyungjun.html">Hyungjug</a></li>
 							<li><a href="./introduce/juhee.html">Juhee</a></li>
 							<li><a href="./introduce/taeyun.html">Taeyun</a></li>
 							<li><a href="./introduce/taehyung.html">TaeHyung</a></li>
@@ -86,8 +86,8 @@
 				<div class="line"></div>
 				<div class="select">
 					<span class="backward" id="backward1"><i class="fa fa-backward fa-2x" aria-hidden="true"></i></span>				
-					<span><i class="fa fa-play-circle fa-5x"></i></span>
-					<span><i class="fa fa-pause-circle fa-5x"></i></span>
+					<span id="playPause"><i class="fa fa-play-circle fa-5x"></i></span>
+    				<audio id="audio" src="./music/hyeongjun.mp3"></audio>
 					<span class="forward" id="forward1"><i class="fa fa-forward fa-2x" aria-hidden="true"></i></i></span>
 				</div>
 			</div>
@@ -103,8 +103,8 @@
 				<div class="line"></div>
 				<div class="select">
 					<span class="backward" id="backward2"><i class="fa fa-backward fa-2x" aria-hidden="true"></i></span>				
-					<span><i class="fa fa-play-circle fa-5x"></i></span>
-					<span><i class="fa fa-pause-circle fa-5x"></i></span>
+					<span id="playPause"><i class="fa fa-play-circle fa-5x"></i></span>
+    				<audio id="audio" src="./music/juhee.mp3"></audio>
 					<span class="forward" id="forward2"><i class="fa fa-forward fa-2x" aria-hidden="true"></i></i></span>
 				</div>
 			</div>
@@ -120,8 +120,8 @@
 				<div class="line"></div>
 				<div class="select">
 					<span class="backward" id="backward3"><i class="fa fa-backward fa-2x" aria-hidden="true"></i></span>				
-					<span><i class="fa fa-play-circle fa-5x"></i></span>
-					<span><i class="fa fa-pause-circle fa-5x"></i></span>
+					<span id="playPause"><i class="fa fa-play-circle fa-5x"></i></span>
+    				<audio id="audio" src="./music/taeyun.mp3"></audio>
 					<span class="forward" id="forward3"><i class="fa fa-forward fa-2x" aria-hidden="true"></i></i></span>
 				</div>
 			</div>
@@ -137,9 +137,8 @@
 				<div class="line"></div>
 				<div class="select">
 					<span class="backward" id="backward4"><i class="fa fa-backward fa-2x" aria-hidden="true"></i></span>				
-					<span><i class="fa fa-play-circle fa-5x"></i></span>
-					<audio src="오디오 파일 경로"></audio>
-					<span><i class="fa fa-pause-circle fa-5x"></i></span>
+					<span id="playPause"><i class="fa fa-play-circle fa-5x"></i></span>
+    				<audio id="audio" src="./music/taehyung.mp3"></audio>
 					<span class="forward" id="forward4"><i class="fa fa-forward fa-2x" aria-hidden="true"></i></i></span>
 				</div>
 			</div>
@@ -155,9 +154,8 @@
 				<div class="line"></div>
 				<div class="select">
 					<span class="backward" id="backward5"><i class="fa fa-backward fa-2x" aria-hidden="true"></i></span>				
-					<span><i class="fa fa-play-circle fa-5x"></i></span>
-					<audio src="./music/suhyun.mp3"></audio>
-					<span><i class="fa fa-pause-circle fa-5x"></i></span>
+					<span id="playPause"><i class="fa fa-play-circle fa-5x"></i></span>
+    				<audio id="audio" src="./music/suhyun.mp3"></audio>
 					<span class="forward" id="forward5"><i class="fa fa-forward fa-2x" aria-hidden="true"></i></i></span>
 				</div>
 			</div>
@@ -235,29 +233,23 @@
 </script>
 <!-- 재생 버튼 -->
 <script>
-	document.addEventListener("DOMContentLoaded", function () {
-		let currentIndex = 0;
-		let totalPlayers = document.querySelectorAll('.player').length;
-	
-		for (let i = 1; i <= totalPlayers; i++) {
-			let forwardBtn = document.getElementById("forward" + i);
-			let backwardBtn = document.getElementById("backward" + i);
-			console.log(forwardBtn);
-			console.log(backwardBtn);
-
-			let playPauseBtn = document.getElementById("playPause" + i);
-			let audio = new Audio('your-audio-file.mp3'); // replace 'your-audio-file.mp3' with your actual audio file
-	
-			playPauseBtn.onclick = function () {
-				if (audio.paused) {
-					audio.play();
-					playPauseBtn.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
-				} else {
-					audio.pause();
-					playPauseBtn.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
-				}
-			};
-
-		}
-		});
-	</script>
+	// Get references to the play/pause button and the audio element
+	let playPauseButton = document.getElementById('playPause');
+	let audio = document.getElementById('audio');
+	let backwardBtn = 
+	// Add a click event listener to the play/pause button
+	playPauseButton.addEventListener('click', function () {
+	  // Check if the audio is currently paused
+	  if (audio.paused) {
+		// If paused, play the audio
+		audio.play();
+		// Change the icon to pause
+		playPauseButton.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
+	  } else {
+		// If playing, pause the audio
+		audio.pause();
+		// Change the icon to play
+		playPauseButton.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
+	  }
+	});
+  </script>
