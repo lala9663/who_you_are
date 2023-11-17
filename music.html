@@ -87,7 +87,7 @@
 				<div class="select">
 					<span class="backward" id="backward1"><i class="fa fa-backward fa-2x" aria-hidden="true"></i></span>				
 					<span id="playPause"><i class="fa fa-play-circle fa-5x"></i></span>
-    				<audio id="audio" src="./music/hyungjun.mp3"></audio>
+    				<audio id="audio" src="./music/hyeongjun.mp3"></audio>
 					<span class="forward" id="forward1"><i class="fa fa-forward fa-2x" aria-hidden="true"></i></i></span>
 				</div>
 			</div>
@@ -233,54 +233,23 @@
 </script>
 <!-- 재생 버튼 -->
 <script>
-	document.addEventListener("DOMContentLoaded", function () {
-	  let currentIndex = 0;
-	  let totalPlayers = document.querySelectorAll('.player').length;
-	  let audio = document.getElementById('audio');
-  
-	  function updateContent() {
-		  let players = document.querySelectorAll('.player');
-  
-		  // Pause the currently playing audio
-		  audio.pause();
-  
-		  // Hide all players
-		  players.forEach(function (player) {
-			  player.style.display = "none";
-		  });
-  
-		  // Show the current player
-		  players[currentIndex].style.display = "block";
+	// Get references to the play/pause button and the audio element
+	let playPauseButton = document.getElementById('playPause');
+	let audio = document.getElementById('audio');
+	let backwardBtn = 
+	// Add a click event listener to the play/pause button
+	playPauseButton.addEventListener('click', function () {
+	  // Check if the audio is currently paused
+	  if (audio.paused) {
+		// If paused, play the audio
+		audio.play();
+		// Change the icon to pause
+		playPauseButton.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
+	  } else {
+		// If playing, pause the audio
+		audio.pause();
+		// Change the icon to play
+		playPauseButton.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
 	  }
-  
-	  // Function to play or pause the audio
-	  function togglePlayPause() {
-		  if (audio.paused) {
-			  audio.play();
-			  document.getElementById('playPause').innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
-		  } else {
-			  audio.pause();
-			  document.getElementById('playPause').innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
-		  }
-	  }
-  
-	  for (let i = 1; i <= totalPlayers; i++) {
-		  let forwardBtn = document.getElementById("forward" + i);
-		  let backwardBtn = document.getElementById("backward" + i);
-  
-		  forwardBtn.onclick = function () {
-			  currentIndex = (currentIndex + 1) % totalPlayers;
-			  updateContent();
-		  };
-  
-		  backwardBtn.onclick = function () {
-			  currentIndex = (currentIndex - 1 + totalPlayers) % totalPlayers;
-			  updateContent();
-		  };
-	  }
-  
-	  // Play/Pause button click event
-	  document.getElementById('playPause').addEventListener('click', togglePlayPause);
-  });
+	});
   </script>
-  
