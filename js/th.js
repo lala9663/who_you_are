@@ -1,24 +1,25 @@
+
 var playlist = [
     {
-      "song"    : "House of the Rising Sun",
-      "album"   : "The Animals",
-      "artist"  : "The Animals",
+      "song"    : "My Stupid Heart",
+      "album"   : "My Stupid Heart",
+      "artist"  : "Walk Off The Earth",
       "artwork" : "http://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Rising_sun_animals_US.jpg/220px-Rising_sun_animals_US.jpg",
-      "mp3"     : "http://retro-disko.ru/6/music/016.mp3"
+      "mp3"     : " ../music/th1.mp3"
     },
     {
-      "song"    : "Superstition",
-      "album"   : "Talking Book",
-      "artist"  : "Stevie Wonder",
+      "song"    : "My Stupid Heart(Kid Version)",
+      "album"   : "My Stupid Heart",
+      "artist"  : "Walk Off The Earth",
       "artwork" : "https://i.imgur.com/Py4XcBT.png",
-      "mp3"     : "http://vocaroo.com/media_command.php?media=s1WYNvqulYH9&command=download_mp3"
+      "mp3"     : " ../music/th2.mp3"
     },
     {
-      "song"    : "I Need You Back",
-      "album"   : "Premiere",
-      "artist"  : "The Noisy Freaks",
+      "song"    : "Galway Girl",
+      "album"   : "Deluxe",
+      "artist"  : "Ed sheeran",
       "artwork" : "http://i1285.photobucket.com/albums/a583/TheGreatOzz1/Hosted-Images/Noisy-Freeks-Image_zps4kilrxml.png",
-      "mp3"     : "http://kirkbyo.net/Assets/The-Noisy-Freaks.mp3"
+      "mp3"     : " ../music/th3.mp3"
     }
   ];
   
@@ -253,3 +254,101 @@ var playlist = [
   music.addEventListener("canplay", function () {
     duration = music.duration;
   }, false);
+// -------------------------------------------------------------------------
+
+// const playBtn = document.getElementById("play");
+// const musicContainer = document.getElementById("musicContainer");
+// const audio = document.getElementById("audio");
+// const prevBtn = document.getElementById("prev");
+// const nextBtn = document.getElementById("next");
+// const progress = document.getElementById("progress");
+// const progressContainer = document.getElementById('progress-container');
+// const imgCover = document.getElementById("cover");
+// const title = document.getElementById("title");
+
+// const songs = ["hey", "summer", "ukulele"];
+
+// let songIndex = 2;
+
+// loadSong(songs[songIndex]);
+
+// function loadSong(song) {
+//   title.innerText = song;
+//   audio.src = `http://127.0.0.1:5500/music/${song}.mp3`;
+//   imgCover.src = `http://127.0.0.1:5500/images/${song}.jpg`;
+// }
+
+// function playMusic() {
+//   musicContainer.classList.add("play");
+
+//   playBtn.innerHTML = `<i class="fa-solid fa-pause"></i>`;
+
+//   audio.play();
+// }
+
+// function pauseMusic(){
+//     musicContainer.classList.remove('play');
+//     playBtn.innerHTML = `<i class="fa-solid fa-play"></i>`;
+
+//     audio.pause();
+// }
+
+// function playPrevSong() {
+//     songIndex--;
+
+//     if (songIndex < 0) {
+//       songIndex = songs.length - 1;
+//     }
+  
+//     loadSong(songs[songIndex]);
+  
+//     playMusic();
+// }
+
+// function playNextSong (){
+//     songIndex++;
+
+//     if(songIndex > 2){
+//         songIndex = 0;
+//     }
+
+//     loadSong(songs[songIndex]);
+//     playMusic();
+// }
+
+// function updateProgress(e){
+//     const {duration, currentTime} = e.srcElement;
+
+//     const progressPer = (currentTime / duration) * 100;
+
+//     progress.style.width = `${progressPer}%`;
+// }
+
+// function changeProgress(e){
+
+//     const width = e.target.clientWidth; // 전체 넓이
+
+//     const offsetX = e.offsetX; // 현재 x 좌표;
+
+//     const duration = audio.duration; // 재생길이
+
+//     audio.currentTime = (offsetX / width) * duration; 
+
+// }
+
+// playBtn.addEventListener("click", () => {
+//     const isPlaying = musicContainer.classList.contains('play');
+
+//     if(isPlaying){
+//         pauseMusic();
+//     } else{
+//         playMusic();
+//     }
+// });
+
+// prevBtn.addEventListener("click", playPrevSong);
+// nextBtn.addEventListener('click', playNextSong);
+// audio.addEventListener('ended', playNextSong);
+// audio.addEventListener('timeupdate', updateProgress);
+
+// progressContainer.addEventListener('click', changeProgress);
