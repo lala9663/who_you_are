@@ -6,14 +6,17 @@
 	<meta name="description" content="Boto Photo Studio HTML Template">
 	<meta name="keywords" content="photo, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Icon -->
 	<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
 	<link rel="stylesheet" href="css/slicknav.min.css"/>
-	<link rel="stylesheet" href="css/slick.css"/>
+
 	<!-- Main Stylesheets -->
-	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/team.css"/>
+
+
 </head>
 <body>
 	<!-- Page Preloder -->
@@ -44,8 +47,8 @@
 			</div>
 			<nav class="main__menu">
 				<ul class="nav__menu">
-					<li><a href="./index.html" class="menu--active">Home</a></li>
-					<li><a href="./team.html">Team</a></li>
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="./team.html" class="menu--active">Team</a></li>
 					<li><a href="#">Personal</a>
 						<ul class="sub__menu">
 							<li><a href="./introduce/hyungjun.html">Hyungjun</a></li>
@@ -65,74 +68,85 @@
 	</header>
 	<!-- Header Section end -->
 
-	<!-- Content Section -->
-	<section class="hero__section">
-		<div class="hero-slider">
-			<!-- Team Page -->
-			<div class="slide-item">
-				<a onclick="location.href='./team.html'">
-					<img src="img/profile/team.jpg" alt="" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
-				</a>
-			</div>
-
-			<div class="slide-item">
-				<a onclick="location.href='./introduce/hyungjun.html'" >
-					<img src="img/profile/hyungjun.png" alt="" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
-				</a>
-			</div>
-
-			<div class="slide-item">
-				<a onclick="location.href='./introduce/juhee.html'" >
-					<img src="img/profile/juhee.png" alt="" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
-					</a>
-			</div>
-			<div class="slide-item">
-				<a onclick="location.href='/introduce/taeyun.html'" >
-					<img src="img/profile/taeyun.png" alt="" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
-				</a>	
-			</div>
-
-			<div class="slide-item">
-				<a onclick="location.href='/introduce/taehyung.html'" >
-					<img src="img/profile/taehyung.png" alt="" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
-				</a>	
-			</div>
-
-			<div class="slide-item">
-				<a onclick="location.href='/introduce/suhyun.html'">
-					<img src="img/profile/suhyun.png" alt="" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
-				</a>	
-			</div>
-		</div>
-		
-		<div class="hero-text-slider">
-			<div class="text-item">
-				<h2>Metanet Team 04</h2>
-				<p>Intoduce Page</p>
-			</div>
-			<div class="text-item">
-				<h2>Hyungjun</h2>
-				<p>Intoduce Page</p>
-			</div>
-			<div class="text-item">
-				<h2>Juhee</h2>
-				<p>Intoduce Page</p>
-			</div>
-			<div class="text-item">
-				<h2>Taeyun</h2>
-				<p>Intoduce Page</p>
-			</div>
-			<div class="text-item">
-				<h2>Taehyung</h2>
-				<p>Intoduce Page</p>
-			</div>
-			<div class="text-item">
-				<h2>SuHyun</h2>
-				<p>Intoduce Page</p>
+	<!-- Content Page -->
+	<section style="margin: 90px 60px 0px;">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="about__text">
+						<h3 class="about__title">4조를 소개합니다</h3>
+						<div class="about__meta">
+							<!-- 4조 그림 시작-->
+							<div class="hover09">
+							<figure>
+							<img src="img/profile/team.jpg" alt="">
+							</figure>
+							</div>
+							<!-- 4조 그림 끝 -->
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="experience__text">
+						<h3 class="about__title">Keywords</h3>
+						<!-- Keywords 글자 에니메이션 효과 시작-->
+						<!-- <h3 class="about__title">Keywords</h3> -->
+						<!-- <div class="main"> -->
+							<div class="animation">
+							  <!-- <span class="one_text">여기는</span> -->
+							  <span class="two_text about__title">keywords</span>
+							</div>
+						  <!-- </div> -->
+						<!-- Keywords 글자 에니메이션 효과 시작-->
+						<div class="experience__item">
+							<h4>협동</h4>
+							
+						</div>
+						<div class="experience__item">
+							<h4>헌신</h4>
+							
+						</div>
+						<div class="experience__item">
+							<h4>의리</h4>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="skills__text">
+						<h3 class="about__title">Skills</h3>
+						
+						<div class="single-progress-item">
+							<h6>Backend</h6>
+							<div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+								<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 80%"></div>
+							</div>
+						</div>
+						<div class="single-progress-item">
+							<h6>Frontend</h6>
+							<div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+								<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 70%"></div>
+							</div>
+						</div>
+						<div class="single-progress-item">
+							<h6>Git</h6>
+							<div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+								<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 75%"></div>
+							</div>
+						</div>
+						<div class="single-progress-item">
+							<h6>Analysis</h6>
+							<div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+								<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 90%"></div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
-	<!-- Content Section end -->
+	<!-- Content Page end -->
 
 	<!-- Footer Section -->
 	<footer class="footer__section">
@@ -164,18 +178,4 @@
 	<script src="js/main.js"></script>
 
 	</body>
-
-	<script>
-		function zoomIn(event) {
-			event.target.style.transform = "scale(1.2)"; //1.2배 확대
-			event.target.style.zIndex = 1;
-			event.target.style.transition = "all 0.5s";// 속도
-		}
-
-		function zoomOut(event) {
-			event.target.style.transform = "scale(1)";
-			event.target.style.zIndex = 0;
-			event.target.style.transition = "all 0.5s";
-		}
-	</script>
 </html>

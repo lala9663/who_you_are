@@ -1,24 +1,27 @@
 
 .player {
-  /* width: 800px; */
   height: 529px;
-  background: #6b6d83;
   box-shadow: 0px 24px 54px -12px rgba(94, 97, 120, 1);
-  /* position: absolute; */
   left: 50%;
-  /* transform: translateX(-400px); */
   top: 20%;
+  border-radius: 10%;
 }
 
 .player .cover {
   width: 230px;
   position: relative;
-  left: 50%;
+  left: 35%;
   transform: translateX(-115px);
   top: -40px;
   box-shadow: 5px 20px 50px 0px rgba(17, 17, 17, 0.4);
+  border-radius: 50%;
 }
 
+@media (max-width: 600px) {
+	.player .cover {
+    left: 25%;
+  }
+}
 
 .player .info {
   position: relative;
@@ -36,16 +39,16 @@
 }
 
 .player .info .artist {
-  color: #fff;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #7E858B;
 }
 
 .player .line {
   height: 3px;
   width: 100%;
-  background-color: #525363;
-  margin: 3rem auto;
-  /* position: absolute; */
-  /* top: 400px; */
+  background-color: #8DB952;
+  margin: 2rem auto;
   }
 
 .player .playtime {
@@ -56,20 +59,14 @@
   bottom: 0px;
 }
 
-/* .player .played {
-  background-color: #72e6cf;
-  height: 5px;
-  width: 300px;
-  position: absolute;
-  bottom: 0px;
-} */
+.player span{
+  color:#8DB952;
+}
 
-.player svg {
-  width: 85px;
-  background-color: #fff;
-  border-radius: 50%;
-  height: 85px;
-  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.4);
+.player span:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+
 }
 
 .player .select {
@@ -80,26 +77,39 @@
 
 .player .forward {
   margin-left: 80px;
-  color: #fff;
-  /* width: 30px; */
-  /* position: absolute; */
-  /* bottom: 55px; */
-  /* right: -70%; */
+  color: #7E858B;
+
 }
 
 .player .backward {
   margin-right: 80px;
-  color: #fff;
-  /* width: 30px; */
-  /* position: absolute; */
-  /* bottom: 55px; */
-  /* left: 36%; */
+  color: #7E858B;
 }
 
 .player .fa.fa-volume-up {
   color: #fff;
-  /* position: absolute; */
-  /* bottom: 53px; */
-  /* right: 28%; */
 }
 
+.select .backward,
+.select .forward {
+    cursor: pointer;
+}
+
+.select .backward:hover,
+.select .forward:hover {
+	color: #000;
+  transform: scale(1.1);
+}
+
+.rotate360 {
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

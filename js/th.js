@@ -1,25 +1,25 @@
 
 var playlist = [
     {
-      "song"    : "House of the Rising Sun",
-      "album"   : "The Animals",
-      "artist"  : "The Animals",
+      "song"    : "My Stupid Heart",
+      "album"   : "My Stupid Heart",
+      "artist"  : "Walk Off The Earth",
       "artwork" : "http://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Rising_sun_animals_US.jpg/220px-Rising_sun_animals_US.jpg",
-      "mp3"     : "thsongs/$RT5D50R.mp3"
+      "mp3"     : " ../music/th1.mp3"
     },
     {
-      "song"    : "Superstition",
-      "album"   : "Talking Book",
-      "artist"  : "Stevie Wonder",
+      "song"    : "My Stupid Heart(Kid Version)",
+      "album"   : "My Stupid Heart",
+      "artist"  : "Walk Off The Earth",
       "artwork" : "https://i.imgur.com/Py4XcBT.png",
-      "mp3"     : "http://vocaroo.com/media_command.php?media=s1WYNvqulYH9&command=download_mp3"
+      "mp3"     : " ../music/th2.mp3"
     },
     {
-      "song"    : "I Need You Back",
-      "album"   : "Premiere",
-      "artist"  : "The Noisy Freaks",
+      "song"    : "Galway Girl",
+      "album"   : "Deluxe",
+      "artist"  : "Ed sheeran",
       "artwork" : "http://i1285.photobucket.com/albums/a583/TheGreatOzz1/Hosted-Images/Noisy-Freeks-Image_zps4kilrxml.png",
-      "mp3"     : "http://kirkbyo.net/Assets/The-Noisy-Freaks.mp3"
+      "mp3"     : " ../music/th3.mp3"
     }
   ];
   
