@@ -17,3 +17,9 @@ document.querySelector('.search-container button').addEventListener('click', fun
         }
     }
 });
+
+
+document.getElementById('writePostBtn').addEventListener('click', function() {
+    // 여기에 이동하길 원하는 페이지의 URL을 넣어주세요.
+    window.location.href = 'https://www.naver.com/';
+  });
