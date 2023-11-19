@@ -10,6 +10,20 @@ align-items: center;
 justify-content: space-between;
 }
 
+@keyframes rotateIn {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(180deg);
+    }
+  }
+
+  #front,
+  #back {
+    animation: rotateIn 1s ease-in-out;
+  }
+
 label.switch{
     margin-bottom: 0px;
 }
@@ -43,6 +57,7 @@ label.switch{
 
 .slider:before {
   position: absolute;
+  cursor: pointer;
   content: "";
   height: 26px;
   width: 50px;
@@ -74,4 +89,8 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 34px;
+}
+
+#back{
+    display: none;
 }
