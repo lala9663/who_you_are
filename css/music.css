@@ -1,13 +1,8 @@
 
 .player {
-  /* width: 800px; */
   height: 529px;
-  /* background: #6b6d83; */
-  /* background: #6b6d83; */
   box-shadow: 0px 24px 54px -12px rgba(94, 97, 120, 1);
-  /* position: absolute; */
   left: 50%;
-  /* transform: translateX(-400px); */
   top: 20%;
   border-radius: 10%;
 }
@@ -15,11 +10,17 @@
 .player .cover {
   width: 230px;
   position: relative;
-  left: 50%;
+  left: 35%;
   transform: translateX(-115px);
   top: -40px;
   box-shadow: 5px 20px 50px 0px rgba(17, 17, 17, 0.4);
   border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+	.player .cover {
+    left: 25%;
+  }
 }
 
 .player .info {
@@ -48,8 +49,6 @@
   width: 100%;
   background-color: #8DB952;
   margin: 2rem auto;
-  /* position: absolute; */
-  /* top: 400px; */
   }
 
 .player .playtime {
@@ -59,14 +58,6 @@
   position: absolute;
   bottom: 0px;
 }
-
-/* .player .played {
-  background-color: #72e6cf;
-  height: 5px;
-  width: 300px;
-  position: absolute;
-  bottom: 0px;
-} */
 
 .player span{
   color:#8DB952;
@@ -87,26 +78,16 @@
 .player .forward {
   margin-left: 80px;
   color: #7E858B;
-  /* width: 30px; */
-  /* position: absolute; */
-  /* bottom: 55px; */
-  /* right: -70%; */
+
 }
 
 .player .backward {
   margin-right: 80px;
   color: #7E858B;
-  /* width: 30px; */
-  /* position: absolute; */
-  /* bottom: 55px; */
-  /* left: 36%; */
 }
 
 .player .fa.fa-volume-up {
   color: #fff;
-  /* position: absolute; */
-  /* bottom: 53px; */
-  /* right: 28%; */
 }
 
 .select .backward,
@@ -118,4 +99,17 @@
 .select .forward:hover {
 	color: #000;
   transform: scale(1.1);
+}
+
+.rotate360 {
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

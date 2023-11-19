@@ -75,8 +75,8 @@
 			
 			<div class="carousel-container">
 			<!-- #1 형준 -->
-			<div class="player" style="display: block;">
-				<img class="cover" src="./img/music/hyungjun.jpg" alt="Cover">
+			<div class="player" style="display: block">
+				<img class="cover rotate360" src="./img/music/hyungjun.jpg" alt="Cover">
 			
 				<div class="info">
 					<p class="title">Waves</p>
@@ -87,13 +87,13 @@
 				<div class="select">
 					<span class="backward" id="backward1"><i class="fa fa-backward fa-2x" aria-hidden="true"></i></span>				
 					<span id="playPause"><i class="fa fa-play-circle fa-5x"></i></span>
-    				<audio id="audio" src="./music/hyeongjun.mp3"></audio>
+    				<audio id="audio" src="./music/hyungjun.mp3"></audio>
 					<span class="forward" id="forward1"><i class="fa fa-forward fa-2x" aria-hidden="true"></i></i></span>
 				</div>
 			</div>
 			<!-- #2 주희 -->
 			<div class="player" style="display: none";>
-				<img class="cover" src="./img/music/juhee.jpg" alt="Cover">
+				<img class="cover rotate360" src="./img/music/juhee.jpg" alt="Cover">
 			
 				<div class="info">
 					<p class="title">Closer</p>
@@ -110,7 +110,7 @@
 			</div>
 			<!-- #3 태윤 -->
 			<div class="player" style="display: none";>
-				<img class="cover" src="./img/music/taeyun.jpg" alt="Cover">
+				<img class="cover rotate360" src="./img/music/taeyun.jpg" alt="Cover">
 			
 				<div class="info">
 					<p class="title">빛이나는 너에게</p>
@@ -127,8 +127,7 @@
 			</div>
 			<!-- #4 태형 -->
 			<div class="player" style="display: none";>
-				<img class="cover" src="./img/music/taehyung.jpg" alt="Cover">
-			
+				<img class="cover rotate360" src="./img/music/taehyung.jpg" alt="Cover">
 				<div class="info">
 					<p class="title">Circles</p>
 					<p class="artist">Post Malone</p>
@@ -144,7 +143,7 @@
 			</div>
 			<!-- #5 수현 -->
 			<div class="player" style="display: none";>
-				<img class="cover" src="./img/music/suhyun.jpg" alt="Cover">
+				<img class="cover rotate360" src="./img/music/suhyun.jpg" alt="Cover">
 			
 				<div class="info">
 					<p class="title">한 페이지가 될 수 있게</p>
@@ -199,57 +198,74 @@
 </html>
 <!-- 이동 버튼 -->
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    let currentIndex = 0;
-    let totalPlayers = document.querySelectorAll('.player').length;
-
-    function updateContent() {
-        let players = document.querySelectorAll('.player');
-
-        // Hide all players
-        players.forEach(function (player) {
-            player.style.display = "none";
-        });
-
-        // Show the current player
-        players[currentIndex].style.display = "block";
-    }
-
-    for (let i = 1; i <= totalPlayers; i++) {
-        let forwardBtn = document.getElementById("forward" + i);
-        let backwardBtn = document.getElementById("backward" + i);
-
-        forwardBtn.onclick = function () {
-            currentIndex = (currentIndex + 1) % totalPlayers;
-            updateContent();
-        };
-
-        backwardBtn.onclick = function () {
-            currentIndex = (currentIndex - 1 + totalPlayers) % totalPlayers;
-            updateContent();
-        };
-    }
-});
-</script>
-<!-- 재생 버튼 -->
-<script>
-	// Get references to the play/pause button and the audio element
-	let playPauseButton = document.getElementById('playPause');
-	let audio = document.getElementById('audio');
-	let backwardBtn = 
-	// Add a click event listener to the play/pause button
-	playPauseButton.addEventListener('click', function () {
-	  // Check if the audio is currently paused
-	  if (audio.paused) {
-		// If paused, play the audio
-		audio.play();
-		// Change the icon to pause
-		playPauseButton.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
-	  } else {
-		// If playing, pause the audio
-		audio.pause();
-		// Change the icon to play
-		playPauseButton.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
+	document.addEventListener("DOMContentLoaded", function () {
+	  let currentIndex = 0;
+	  let totalPlayers = document.querySelectorAll('.player').length;
+	  let audioElements = document.querySelectorAll('.player .select #audio');
+	  let playButtons = document.querySelectorAll('.player .select #playPause');
+  
+	  function updateContent() {
+		let players = document.querySelectorAll('.player');
+  
+		// Hide all players
+		players.forEach(function (player) {
+		  player.style.display = "none";
+		});
+  
+		// Show the current player
+		players[currentIndex].style.display = "block";
+	  }
+  
+	  for (let i = 1; i <= totalPlayers; i++) {
+		let forwardBtn = document.getElementById("forward" + i);
+		let backwardBtn = document.getElementById("backward" + i);
+  
+		forwardBtn.onclick = function () {
+		  if (!audioElements[currentIndex].paused) {
+			// If currently playing, pause the audio
+			audioElements[currentIndex].pause();
+			// Change the icon to play
+			playButtons[currentIndex].innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
+		  }
+		  currentIndex = (currentIndex + 1) % totalPlayers;
+		  updateContent();
+		};
+  
+		backwardBtn.onclick = function () {
+		  if (!audioElements[currentIndex].paused) {
+			// If currently playing, pause the audio
+			audioElements[currentIndex].pause();
+			// Change the icon to play
+			playButtons[currentIndex].innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
+		  }
+		  currentIndex = (currentIndex - 1 + totalPlayers) % totalPlayers;
+		  updateContent();
+		};
 	  }
 	});
   </script>
+  
+<!-- 재생 버튼 -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let playButtons = document.querySelectorAll('.player .select #playPause');
+        let audioElements = document.querySelectorAll('.player .select #audio');
+
+        playButtons.forEach(function (playButton, index) {
+            playButton.addEventListener('click', function () {
+                // Check if the audio is currently paused
+                if (audioElements[index].paused) {
+                    // If paused, play the audio
+                    audioElements[index].play();
+                    // Change the icon to pause
+                    playButton.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
+                } else {
+                    // If playing, pause the audio
+                    audioElements[index].pause();
+                    // Change the icon to play
+                    playButton.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
+                }
+            });
+        });
+    });
+</script>
