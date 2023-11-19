@@ -132,13 +132,13 @@
 <!-- Right Column -->
 <div class="w3-twothird">
   <!-- Switch Section -->
-  <div class="header w3-container w3-card w3-white w3-margin-bottom" style="width: 100%; height: 62px;">
-    <div class="w3-center w3-center-align">
+  <div class="header w3-container w3-card w3-white w3-margin-bottom" style="width: 100%; height: 62px; display: flex; justify-content: space-between;">
+      <h5 style="width: 30%; text-align: right; color:  #7E858B; font-weight: bold;" id="front-title">My Office Life</h5>
       <label class="switch">
         <input type="checkbox" id="toggleSwitch">
         <span class="slider round"></span>
       </label>
-    </div>
+      <h5 style="width: 30%; text-align: left; color:  #4CAF50; font-weight: bold;" id="back-title">My Real Life</h5>
   </div>
   <!-- Main Front Section -->
   <div id="front">
@@ -307,11 +307,16 @@
     if (this.checked) {
       // If the switch is checked, show the back section and hide the front section
       frontSection.style.display = 'none';
+      document.getElementById('front-title').style.opacity = 0.5;
       backSection.style.display = 'block';
+      document.getElementById('back-title').style.opacity = 2;
     } else {
       // If the switch is unchecked, show the front section and hide the back section
       frontSection.style.display = 'block';
+      document.getElementById('front-title').style.opacity = 2;
       backSection.style.display = 'none';
+      document.getElementById('back-title').style.opacity = 0.5;
+      
     }
   });
 </script>
