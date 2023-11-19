@@ -10,11 +10,17 @@
 .player .cover {
   width: 230px;
   position: relative;
-  left: 50%;
+  left: 35%;
   transform: translateX(-115px);
   top: -40px;
   box-shadow: 5px 20px 50px 0px rgba(17, 17, 17, 0.4);
   border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+	.player .cover {
+    left: 25%;
+  }
 }
 
 .player .info {
@@ -95,3 +101,15 @@
   transform: scale(1.1);
 }
 
+.rotate360 {
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
