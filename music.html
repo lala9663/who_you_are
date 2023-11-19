@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-	<title>Boto | Photography HTML Template</title>
+	<title>Metanet_Team04</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Boto Photo Studio HTML Template">
 	<meta name="keywords" content="photo, html">
@@ -18,7 +18,6 @@
 	<!-- Main Stylesheets -->
 	<link rel="stylesheet" href="css/style.css"/>
 	<link rel="stylesheet" href="css/music.css"/>
-
 </head>
 <body>
 	<!-- Page Preloder -->
@@ -53,7 +52,7 @@
 					<li><a href="./team.html" >Team</a></li>
 					<li><a href="#">Personal</a>
 						<ul class="sub__menu">
-							<li><a href="./introduce/hyeonjong.html">Hyunjong</a></li>
+							<li><a href="./introduce/hyungjun.html">Hyungjug</a></li>
 							<li><a href="./introduce/juhee.html">Juhee</a></li>
 							<li><a href="./introduce/taeyun.html">Taeyun</a></li>
 							<li><a href="./introduce/taehyung.html">TaeHyung</a></li>
@@ -73,29 +72,94 @@
 	<!-- Content Section -->
 	<section class="contact__page">
 		<div class="contact__warp">
-			<!-- 수정 시작 -->
-			<div class="player">
-				<img class="cover" src="./img/test.jpg" alt="Cover">
+			
+			<div class="carousel-container">
+			<!-- #1 형준 -->
+			<div class="player" style="display: block;">
+				<img class="cover" src="./img/music/hyungjun.jpg" alt="Cover">
 			
 				<div class="info">
-					<p class="title">Leave Your Lover</p>
-					<p class="artist">Artist - Echos</p>
+					<p class="title">Waves</p>
+					<p class="artist">Imagine Dragons</p>
 				</div>
 				
 				<div class="line"></div>
-				<!-- <div class="playtime"></div>
-				<div class="played"></div> -->
 				<div class="select">
-					<span class="backward"><i class="fa fa-backward fa-2x" aria-hidden="true"></i></span>				
-					<svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px">
-					<path d='M256,0C114.617,0,0,114.615,0,256s114.617,256,256,256s256-114.615,256-256S397.383,0,256,0z M344.48,269.57l-128,80  c-2.59,1.617-5.535,2.43-8.48,2.43c-2.668,0-5.34-0.664-7.758-2.008C195.156,347.172,192,341.82,192,336V176  c0-5.82,3.156-11.172,8.242-13.992c5.086-2.836,11.305-2.664,16.238,0.422l128,80c4.676,2.93,7.52,8.055,7.52,13.57  S349.156,266.641,344.48,269.57z' fill='#72e6cf'></path>
-					</svg>
-					<span class="forward"><i class="fa fa-forward fa-2x" aria-hidden="true"></i></i></span>
+					<span class="backward" id="backward1"><i class="fa fa-backward fa-2x" aria-hidden="true"></i></span>				
+					<span id="playPause"><i class="fa fa-play-circle fa-5x"></i></span>
+    				<audio id="audio" src="./music/hyeongjun.mp3"></audio>
+					<span class="forward" id="forward1"><i class="fa fa-forward fa-2x" aria-hidden="true"></i></i></span>
 				</div>
-
-				
 			</div>
-
+			<!-- #2 주희 -->
+			<div class="player" style="display: none";>
+				<img class="cover" src="./img/music/juhee.jpg" alt="Cover">
+			
+				<div class="info">
+					<p class="title">Closer</p>
+					<p class="artist">The Chainsmokers</p>
+				</div>
+				
+				<div class="line"></div>
+				<div class="select">
+					<span class="backward" id="backward2"><i class="fa fa-backward fa-2x" aria-hidden="true"></i></span>				
+					<span id="playPause"><i class="fa fa-play-circle fa-5x"></i></span>
+    				<audio id="audio" src="./music/juhee.mp3"></audio>
+					<span class="forward" id="forward2"><i class="fa fa-forward fa-2x" aria-hidden="true"></i></i></span>
+				</div>
+			</div>
+			<!-- #3 태윤 -->
+			<div class="player" style="display: none";>
+				<img class="cover" src="./img/music/taeyun.jpg" alt="Cover">
+			
+				<div class="info">
+					<p class="title">빛이나는 너에게</p>
+					<p class="artist">던</p>
+				</div>
+				
+				<div class="line"></div>
+				<div class="select">
+					<span class="backward" id="backward3"><i class="fa fa-backward fa-2x" aria-hidden="true"></i></span>				
+					<span id="playPause"><i class="fa fa-play-circle fa-5x"></i></span>
+    				<audio id="audio" src="./music/taeyun.mp3"></audio>
+					<span class="forward" id="forward3"><i class="fa fa-forward fa-2x" aria-hidden="true"></i></i></span>
+				</div>
+			</div>
+			<!-- #4 태형 -->
+			<div class="player" style="display: none";>
+				<img class="cover" src="./img/music/taehyung.jpg" alt="Cover">
+			
+				<div class="info">
+					<p class="title">Circles</p>
+					<p class="artist">Post Malone</p>
+				</div>
+				
+				<div class="line"></div>
+				<div class="select">
+					<span class="backward" id="backward4"><i class="fa fa-backward fa-2x" aria-hidden="true"></i></span>				
+					<span id="playPause"><i class="fa fa-play-circle fa-5x"></i></span>
+    				<audio id="audio" src="./music/taehyung.mp3"></audio>
+					<span class="forward" id="forward4"><i class="fa fa-forward fa-2x" aria-hidden="true"></i></i></span>
+				</div>
+			</div>
+			<!-- #5 수현 -->
+			<div class="player" style="display: none";>
+				<img class="cover" src="./img/music/suhyun.jpg" alt="Cover">
+			
+				<div class="info">
+					<p class="title">한 페이지가 될 수 있게</p>
+					<p class="artist">DAY6(데이식스)</p>
+				</div>
+				
+				<div class="line"></div>
+				<div class="select">
+					<span class="backward" id="backward5"><i class="fa fa-backward fa-2x" aria-hidden="true"></i></span>				
+					<span id="playPause"><i class="fa fa-play-circle fa-5x"></i></span>
+    				<audio id="audio" src="./music/suhyun.mp3"></audio>
+					<span class="forward" id="forward5"><i class="fa fa-forward fa-2x" aria-hidden="true"></i></i></span>
+				</div>
+			</div>
+		</div>
 		</div>
 	</section>
 	<!-- Content Section end-->
@@ -133,3 +197,59 @@
 
 	</body>
 </html>
+<!-- 이동 버튼 -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let currentIndex = 0;
+    let totalPlayers = document.querySelectorAll('.player').length;
+
+    function updateContent() {
+        let players = document.querySelectorAll('.player');
+
+        // Hide all players
+        players.forEach(function (player) {
+            player.style.display = "none";
+        });
+
+        // Show the current player
+        players[currentIndex].style.display = "block";
+    }
+
+    for (let i = 1; i <= totalPlayers; i++) {
+        let forwardBtn = document.getElementById("forward" + i);
+        let backwardBtn = document.getElementById("backward" + i);
+
+        forwardBtn.onclick = function () {
+            currentIndex = (currentIndex + 1) % totalPlayers;
+            updateContent();
+        };
+
+        backwardBtn.onclick = function () {
+            currentIndex = (currentIndex - 1 + totalPlayers) % totalPlayers;
+            updateContent();
+        };
+    }
+});
+</script>
+<!-- 재생 버튼 -->
+<script>
+	// Get references to the play/pause button and the audio element
+	let playPauseButton = document.getElementById('playPause');
+	let audio = document.getElementById('audio');
+	let backwardBtn = 
+	// Add a click event listener to the play/pause button
+	playPauseButton.addEventListener('click', function () {
+	  // Check if the audio is currently paused
+	  if (audio.paused) {
+		// If paused, play the audio
+		audio.play();
+		// Change the icon to pause
+		playPauseButton.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
+	  } else {
+		// If playing, pause the audio
+		audio.pause();
+		// Change the icon to play
+		playPauseButton.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
+	  }
+	});
+  </script>
