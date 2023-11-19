@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html class = "scroll-hi">
 <head>
-<title>taeyun</title>
+<title>profile  </title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="../css/introduce.css">
+<link rel="stylesheet" href="../css/scroll.css">
+<link rel="stylesheet" href="../introduce/text/text.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 .edu{
   height: 400px;
 }
-
+  /* 호버 시 색상 변경 */
+  p a:hover {
+    color: orange;
+  }
 </style>
 </head>
 <body class="w3-light-grey scrollBar">
@@ -29,7 +34,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <span class="text">Branding</span>
         <div class="slide"></div>
       </a>
-      <a href="#">
+      <a href="particles/3d.html">
         <span class="text">Illustration</span>
         <div class="slide"></div>
       </a>
@@ -45,110 +50,127 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
-          <img src="../img/introduce/jjang.png" style="width:100%" alt="Avatar">
-          <div class="">
+          <img src="../img/mydog.jpg" style="width:100%; height:500px;"" alt="Avatar">
+          <div class="the-goods">
             <h2 style="color: black; text-align: left; padding-left: 10px; margin-bottom: 0;">Taeyun Kim</h2>
           </div>
           
         </div>
         <div class="w3-container">
-          <p><i class="fa-fw w3-margin-right w3-large w3-text-cyan"><img src="..\img\birth.png" style="width:5%" alt=""></i>1996.06.03</p>
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-cyan"></i>교육생</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-cyan"></i>Seoul, Korea</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-cyan"></i>lala9663@naver.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-cyan"></i>010-6614-2040</p>
+          <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-large w3-text-orange"></i>1996.06.03</p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-orange"></i>교육생</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-orange"></i>lala9663@naver.com</p>
+          <p>
+            <i class="fa fa-book fa-fw w3-margin-right w3-large w3-text-orange"></i>
+            <a href="https://lala9663.tistory.com">lala9663.tistory.com</a>
+          </p>
+          <p>
+            <i class="fa fa-github-square fa-fw w3-margin-right w3-large w3-text-orange"></i>
+            <a href="https://github.com/lala9663">lala9663</a>
+          </p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-orange"></i>010-6614-2040</p>
           <hr style="border-color: black;">
 
-          <p class="w3-large" style="color: black;"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-cyan"></i>Progrmming Languages</b></p>
+          <p class="w3-large" style="color: #e7891e;"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-orange"></i>Languages</b></p>
           <p>JAVA</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:50%">50%</div>
+            <div class="w3-container w3-center w3-round-xlarge w3-orange" style="width:70%">
+              <div class="w3-center w3-text-white">70%</div>
+            </div>
           </div>
-          <p>Python</p> 
+          <p>RDBMS</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:50%">
+            <div class="w3-container w3-center w3-round-xlarge w3-orange" style="width:50%">
               <div class="w3-center w3-text-white">50%</div>
             </div>
           </div>
+          <p>Javascript</p> 
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-orange" style="width:20%">
+              <div class="w3-center w3-text-white">20%</div>
+            </div>
+          </div>
           <hr style="border-color: black;">
           
 
-          <p class="w3-large w3-text-theme" style="color: black;"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-cyan"></i>Languages</b></p>
-          <p style="color: black;">Korean</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-black" style="height:24px;width:100%">
-              <div class="w3-center w3-text-black">100%</div>
+          <p class="w3-large w3-text-theme" style="color: #e7891e;"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-orange"></i>Progrmming</b></p>
+          <p>BackEnd</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-orange" style="width:70%">
+              <div class="w3-center w3-text-white">70%</div>
             </div>
           </div>
-          <p style="color: black;">English</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-black" style="height:24px;width:50%">
-              <div class="w3-center w3-text-black">50%</div>
+          <p>FrontEnd</p>  
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-orange" style="width:30%">
+              <div class="w3-center w3-text-white">30%</div>
             </div>
           </div>
-          
+          <p>Git</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-orange" style="width:50%">
+              <div class="w3-center w3-text-white">50%</div>
+            </div>
+          </div>
           <br>
         </div>
       </div><br>
-
-    <!-- End Left Column -->
     </div>
 
-    <!-- Right Column -->
     <div class="w3-twothird">
-
       <div class="w3-container w3-card w3-white">
-        <h2 style="color: black;" class="w3-text-black w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-cyan"></i>Education</h2>
+        <h2 class="w3-text-black w3-padding-16"><i class="fa fa-apple fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>I am,,</h2>
+        <div class="w3-container">
+          <h5  class="w3-opacity-black"><b>저는요,,</b></h5>
+          <p>
+            Ok.. 저는요.. 먹는걸 엄청 좋아해요. 그리고 낯가림이 심해요 But 한번 친해지면 잘 놀아요.<br>
+            ISFJ 라고 하는데 저도 왜 제가 F 이고 J 인지 모르겠어요 ㅎㅎ,,<br>
+            Next time 우리 깃도 서로 팔로우해요 먼저 걸어주시면 I am신뢰에요~
+          </p>
+        </div>
+      </div>
+      <div class="w3-container w3-card w3-white">
+        <h2 style="color: black;" class="w3-text-black w3-padding-16"><i class="fa fa-laptop fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>Education</h2>
         <div class="w3-container">
           <h5 style="color: black;" class="w3-opacity-black"><b>Metanet</b></h5>
-          <h6 style="color: black;" class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2023/11 - 2024/03</h6>
-          <p style="size: 100px; color: black;">교육중!!</p>
+          <h6 style="color: black;" class="w3-text-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2023/11 ~ </h6>
+          <p style="size: 100px; color: black;">열심히 교육 참여중!</p>
+          <hr>
+          <h5 style="color: black;" class="w3-opacity-black"><b>Study</b></h5>
+          <h6 style="color: black;" class="w3-text-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2023/05 - 2023/10</h6>
+          <p style="size: 100px; color: black;">동기들과 스터디 및 사이드 프로젝트</p>
+          <hr>
+          <h5 style="color: black;" class="w3-opacity-black"><b>패스트캠퍼스 벡엔드 개발과정</b></h5>
+          <h6 style="color: black;" class="w3-text-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2022/10 - 2023/04</h6>
+          <p style="size: 100px; color: black;">교육과정 수료</p>
         </div>
       </div>
 
       <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-black w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-cyan"></i>Hobby</h2>
+        <h2 class="w3-text-black w3-padding-16"><i class="fa fa-angellist fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>Hobby</h2>
         <div class="w3-container">
-          <h5  class="w3-opacity-black"><b>W3Schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-          <p>Web Development! All I need to know in one place</p>
+          <h5  class="w3-opacity"><b>미드</b></h5>
+          <h6 class="w3-text-orange"><i class="fa fa-dollar fa-fw w3-margin-right"></i>Forever</h6>
+          <p>미국 드라마 엄청 좋아합니다..</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>London Business School</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
-          <p>Master Degree</p>
+          <h5 class="w3-opacity"><b>운동</b></h5>
+          <h6 class="w3-text-orange"><i class="fa fas fas fa-ambulance fa-fw w3-margin-right"></i>Forever</h6>
+          <p>헬스, 스키, 클라이밍 좋아만 합니다.</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>School of Coding</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
-          <p>Bachelor Degree</p><br>
+          <h5 class="w3-opacity"><b>해외 여행</b></h5>
+          <h6 class="w3-text-orange"><i class="fa fa-train fa-fw w3-margin-right"></i>Anyway</h6>
+          <p>여유가 있을때마다,,?</p><br>
         </div>
+      </div>
       </div>
 
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-black w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-cyan"></i>Gallary</h2>
-        <div class="w3-container">
-          <h5  class="w3-opacity-black"><b>W3Schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-          <p>Web Development! All I need to know in one place</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>London Business School</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
-          <p>Master Degree</p>
-          <hr>
-        </div>
-      </div>
-    <!-- End Right Column -->
-    </div>
+      
     
-  <!-- End Grid -->
   </div>
-  
-  <!-- End Page Container -->
 </div>
 
 <footer class="w3-container w3-black w3-center w3-margin-top" style="background-color: black;">
@@ -163,6 +185,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </footer>
 
 <script src="../js/introduce.js"></script>
+<script src="../introduce/text/text.js"></script>
+
 
 
 </body>
