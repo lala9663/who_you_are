@@ -48,17 +48,17 @@
 <ul class="nav__menu">
   <li><a href="../index.html">Home</a></li>
   <li><a href="../team.html" >Team</a></li>
-  <li><a href="#">Personal</a>
+  <li><a href="#" class="menu--active">Personal</a>
     <ul class="sub__menu">
       <li><a href="../introduce/hyungjun.html">Hyungjug</a></li>
       <li><a href="../introduce/juhee.html">Juhee</a></li>
       <li><a href="../introduce/taeyun.html">Taeyun</a></li>
       <li><a href="../introduce/taehyung.html">TaeHyung</a></li>
-      <li><a href="../introduce/suhyun.html">SuHyun</a></li>
+      <li ><a href="../introduce/suhyun.html">SuHyun</a></li>
     </ul>
     
   </li>
-  <li><a href="../music.html" class="menu--active" >Music</a></li>
+  <li><a href="../music.html"  >Music</a></li>
 
   <li><a href="../board.html" >Board</a></li>
 </ul>
@@ -77,10 +77,10 @@
   <!-- Left Column -->
   <div class="w3-third">
     <div class="w3-white w3-text-grey w3-card-4">
-      <div class="w3-display-container">
+      <div class="w3-display-container" >
         <img src="../img/profile/suhyun.png" alt="Avatar" class="profile">
-        <div class="w3-display-bottommiddle w3-container w3-round-xlarge w3-center w3-green">
-          <h2 style="color: white;">지수현</h2>
+        <div class="w3-display-bottommiddle w3-container w3-round-xlarge w3-center w3-green" >
+          <h2 style="color: white;" id="twinkle">지수현</h2>
         </div>
       </div>
       <div class="w3-container">
@@ -196,53 +196,74 @@
     <!-- Main Back Section -->
     <div id="back">
       <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-green"></i>취미</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Junior Developer / KOSA</b></h5>
-          <h6 class="w3-text-green"><i class="fa fa-calendar fa-fw w3-margin-right"></i>NOV 2023 - <span class="w3-tag w3-text-white w3-green w3-round">Current</span></h6>
-          <!-- <p>메타넷 그룹 채용 연계형 교육인턴십(Application 과정)<br/>
-            - Backend - Java, Spring Framework... 학습<br/>
-            - Frontend - HTML, CSS, Javascript... 학습<br/>
-            - 인턴십 진행 예정<br/>
-          </p> -->
-          <hr>
+        <h2 class="w3-text-grey w3-padding-16" ><i class="fa fa-check fa-fw w3-margin-right w3-xxlarge w3-text-green" id="twinkle"></i><span class="w3-tag w3-text-white w3-green w3-round" >관심사</span></h2>
+        <div class="card-columns">
+        <div class="card text-white profile ">
+          <img class="card-img" src="../img/suhyun/image1.png" alt="Card image" >
+          <div class="card-img-overlay">
+            <h5 class="card-title font-weight-bold w3-display-bottommiddle"><span class="w3-tag w3-text-white w3-green w3-round">드라마 시청</span></h5>
+          </div>
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Software Developer / swjungle</b></h5>
-          <h6 class="w3-text-green"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2023 - Jul 2023</h6>
-          <p>SW 사관학교 정글(전산학 학습 과정)<br/>
-            - 컴퓨팅 사고 - 자료구조 및 알고리즘 학습<br/>
-            - OS - RB Tree, Malloc Lab, Web Server 학습<br/>
-            - Project - 팀 프로젝트 포키 서비스 제작<br/>
-          </p>
-          <hr>
+        <div class="card text-white profile">
+          <img class="card-img" src="../img/suhyun/image2.png" alt="Card image">
+          <div class="card-img-overlay">
+            <h5 class="card-title font-weight-bold w3-display-bottommiddle"><span class="w3-tag w3-text-white w3-green w3-round">웹툰</span></h5>
+          </div>
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Infra Engineer / KH </b></h5>
-          <h6 class="w3-text-green"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2021 - Nov 2021</h6>
-          <p>클라우드 엔지니어 과정 (VMware 가상화)<br/>
-            - 서버 - Linux, Window Server 구축 및 운영<br/>
-            - 네트워크 - CCNA, Network 구축 및 운영<br/>
-            - 가상화 - VMware vSphere 가상화 프로젝트 진행<br/>
-          </p>
-          <hr>
+
+        <div class="card text-white profile">
+          <img class="card-img" src="../img/suhyun/image4.jpg" alt="Card image">
+          <div class="card-img-overlay">
+            <h5 class="card-title font-weight-bold w3-display-bottommiddle" ><span class="w3-tag w3-text-white w3-green w3-round">요가</span></h5>
+          </div>
         </div>
+        <div class="card text-white profile">
+          <img class="card-img" src="../img/suhyun/image5.jpg" alt="Card image">
+          <div class="card-img-overlay">
+            <h5 class="card-title font-weight-bold w3-display-bottommiddle" ><span class="w3-tag w3-text-white w3-green w3-round">해외 여행</span></h5>
+          </div>
+        </div>
+        <div class="card text-white profile">
+          <img class="card-img" src="../img/suhyun/image6.jpg" alt="Card image">
+          <div class="card-img-overlay">
+            <h5 class="card-title font-weight-bold w3-display-bottommiddle" ><span class="w3-tag w3-text-white w3-green w3-round">재태크</span></h5>
+          </div>
+        </div>
+        <div class="card text-white profile">
+          <img class="card-img" src="../img/suhyun/image7.jpg" alt="Card image">
+          <div class="card-img-overlay">
+            <h5 class="card-title font-weight-bold w3-display-bottommiddle" ><span class="w3-tag w3-text-white w3-green w3-round">Languages</span></h5>
+          </div>
+        </div>
+        <div class="card text-white profile">
+          <img class="card-img" src="../img/suhyun/food3.jpg" alt="Card image">
+          <div class="card-img-overlay">
+            <h5 class="card-title font-weight-bold w3-display-bottommiddle" ><span class="w3-tag w3-text-white w3-green w3-round">맛집 탐방</span></h5>
+          </div>
+        </div>
+        <hr />
       </div>
-    
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-green"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Infra Engineer</b></h5>
-          <h6 class="w3-text-green"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-          <p>VMware 서버 가상화 구축 및 운영, 장애 지원 업무</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Consultant</b></h5>
-          <h6 class="w3-text-green"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020 - 2021</h6>
-          <p>교통 분야 컨설팅 업무</p>
-          <hr>
-        </div>
+    </div>
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom ">
+        <h2 class="w3-text-grey w3-padding-16" ><i class="fa fa-check fa-fw w3-margin-right w3-xxlarge w3-text-green"  id="twinkle"></i><span class="w3-tag w3-text-white w3-green w3-round" >MBTI</span></h2>
+        <div class="w3-container mbti">
+            <img src="../img/suhyun/MBTI.png" alt="Card image cap" style="width: 30%;">
+            <div style="width: 70%;"> 
+              <h2 style="color: green; font-weight: bold;">INFP</h2>
+              조용하고 자신을 내세우지 않는 것처럼 보이지만, 사실은 에너지와 열정이 넘치는 마음을 지닌 성격입니다
+              <h5>특징</h5>
+              <p style="color: #7E858B;"> 
+                즉흥과 자유를 추구하며, 뛰어난 공감능력을 지니고 있다. 또한, 단체생활보다 혼자 있는 것을 선호한다.
+              </p>
+              
+              <h5>강점&약점</h5>
+              <p style="color: #7E858B;"> 
+                - 공감 능력과 감수성이 뛰어나며, 상상력이 뛰어나고 호기심이 많음<br/>
+                - 신중한 성격으로 결정을 잘 못함, 인간관계에서 상처를 잘 받음
+              </p>
+            </div>
+          </div>
       </div>
     </div>
 
